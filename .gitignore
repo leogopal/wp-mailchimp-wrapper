@@ -1,0 +1,62 @@
+# -----------------------------------------------------------------
+# .gitignore for WordPress
+#
+# By default all files are ignored.  You'll need to whitelist
+# any mu-plugins, plugins, or themes you want to include in the repo.
+#
+# To ignore uncommitted changes in a file that is already tracked, use
+# git update-index --assume-unchanged
+#
+# To stop tracking a file that is currently tracked, use
+# git rm --cached
+#
+# Change Log:
+# 20150227 Created as fork of https://gist.github.com/salcode/9940509,
+# -----------------------------------------------------------------
+
+# ignore node dependency directories (used by grunt)
+node_modules
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# ignore minified files
+*.min.js
+*.min.css
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+/.idea
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!README.md
+!CHANGELOG.md
+!composer.json
